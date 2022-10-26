@@ -10,6 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="hellodeployFlow" doc:id="638cb2e7-0058-4631-ae05-7a4455a02f09" >
 		<http:listener doc:name="/demo" doc:id="8a483394-6335-44b3-83fb-f8e1db42cc06" config-ref="HTTP_Listener_config" path="/demo"/>
 		<logger level="INFO" doc:name="payload" doc:id="671a6fde-6dbe-41b0-bacb-6af1f4576621" message="#[payload]"/>
-		<set-payload value="Successfully call" doc:name="Set Payload" doc:id="970a85e8-657a-4196-9f27-e9483a8eca82" />
+		<set-payload value="Successfully call! Have a nice day!" doc:name="Set Payload" doc:id="970a85e8-657a-4196-9f27-e9483a8eca82" />
 	</flow>
 </mule>
